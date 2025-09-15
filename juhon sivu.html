@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juho Hakala – CV</title>
+  <meta name="description" content="Juho Hakalan ansioluettelo, projektit ja yhteystiedot. Sisältää videoita ja linkkejä." />
+  <meta property="og:title" content="Juho Hakala – CV" />
+  <meta property="og:description" content="Juho Hakalan ansioluettelo, projektit ja yhteystiedot." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg: #0b0c10;
+      --card:#111318;
+      --muted:#8b94a7;
+      --text:#e8ecf3;
+      --brand:#4f8cff;
+      --accent:#00c2a8;
+      --border: #20232a;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7f8fb; --card:#ffffff; --muted:#445065; --text:#0b0c10; --border:#e8eaf0; --shadow: 0 10px 24px rgba(17,19,24,.08);
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:24px 0}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--border)}
+    .title{margin:0;font-size:1.6rem;line-height:1.2}
+    .subtitle{margin:.2rem 0 0;font-size:.95rem;color:var(--muted)}
+    .actions{display:flex;flex-wrap:wrap;gap:10px}
+    .btn{background:var(--brand);color:white;padding:10px 14px;border-radius:12px;border:0;box-shadow:var(--shadow);cursor:pointer;font-weight:600}
+    .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--border);box-shadow:none}
+    main{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+    section{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+    section h2{margin:0 0 10px;font-size:1.2rem}
+    .grid{display:grid;gap:12px}
+    .item{padding:14px;border:1px solid var(--border);border-radius:12px}
+    .muted{color:var(--muted)}
+    .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .tag{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;font-size:.85rem;margin:4px 6px 0 0}
+    .list{display:grid;gap:10px}
+    .list li{list-style:none;padding:12px;border:1px dashed var(--border);border-radius:12px}
+    .video-wrap{position:relative;aspect-ratio:16/9;width:100%;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:#000}
+    iframe, video{width:100%;height:100%;display:block}
+    footer{opacity:.9;text-align:center;padding:28px 0;color:var(--muted)}
+    .two-col{columns:2;gap:14px}
+    @media (max-width: 860px){
+      main{grid-template-columns:1fr}
+      .two-col{columns:1}
+      header{flex-direction:column;align-items:flex-start}
+    }
+    /* Tulostus PDF:ään */
+    @media print{
+      header .actions{display:none}
+      section{break-inside:avoid}
+      body{background:white}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juho Hakala",
+    "jobTitle": "Taloustieteen opiskelija / Analyytikko",
+    "url": "",
+    "sameAs": ["", ""]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img class="avatar" src="https://via.placeholder.com/128x128.png?text=JH" alt="Profiilikuva" />
+        <div>
+          <h1 class="title">Juho Hakala</h1>
+          <p class="subtitle">Taloustieteen maisteriopiskelija • Data & analytiikka • Asiakaspalvelukokemus</p>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="#yhteys">Ota yhteyttä</a>
+        <button class="btn ghost" onclick="window.print()">Tulosta / Tallenna PDF</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Vasen palsta -->
+      <section id="esittely">
+        <h2>Tiivistelmä</h2>
+        <p>
+          Olen ratkaisukeskeinen taloustieteen maisteriopiskelija Jyväskylän yliopistosta.
+          Kiinnostukseni on data-analytiikassa, talousmallinnuksessa ja käytännön ongelmanratkaisussa.
+          Kokemusta asiakaspalvelusta (S-ryhmä) ja projektityöstä sekä Pythonista, SQL:stä ja Excel-mallinnuksesta.
+        </p>
+      </section>
+
+      <section id="kokemus">
+        <div class="row">
+          <h2>Työkokemus</h2>
+          <span class="muted">Valitse olennaisimmat</span>
+        </div>
+        <div class="grid">
+          <article class="item">
+            <strong>S-ryhmä – Asiakaspalvelija</strong>
+            <div class="muted">2019–2024 • Jyväskylä (Prisma, S-market)</div>
+            <p>Palvelu, kassatoiminnot, prosessien tehostaminen. Opitut taidot: vuorovaikutus, tiimityö, vastuunotto.</p>
+          </article>
+          <article class="item">
+            <strong>Analytiikka-/traineetehtävä (esimerkki)</strong>
+            <div class="muted">Kesä 2025 • Helsinki</div>
+            <p>Raportointi Power BI:llä, SQL-kyselyt, automaatio Pythonilla. <em>Lisää oma roolisi ja mitattavat tulokset.</em></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projektit">
+        <div class="row">
+          <h2>Projektit</h2>
+          <span class="muted">Linkitä GitHubiin/raportteihin</span>
+        </div>
+        <ul class="list">
+          <li>
+            <strong>Makrovakaus-simulaattori (kurssiprojekti)</strong> — Python/Excel.
+            <div class="muted">CCyB- ja LTV-skenaarioiden analyysi 2025–2065.</div>
+            <div><a href="#">Katso repo</a> · <a href="#">Lue lyhyt raportti</a></div>
+          </li>
+          <li>
+            <strong>Video-CV</strong> — 90 s esittely + case-demot.
+            <div><a href="#video">Hyppää video-osioon</a></div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Oikea palsta -->
+      <section id="taidot">
+        <h2>Taidot</h2>
+        <div class="two-col">
+          <div>
+            <div class="tag">Python</div>
+            <div class="tag">SQL</div>
+            <div class="tag">Excel</div>
+            <div class="tag">Power BI</div>
+            <div class="tag">Git</div>
+          </div>
+          <div>
+            <div class="tag">Tilastotiede</div>
+            <div class="tag">Ekonometria</div>
+            <div class="tag">Asiakaspalvelu</div>
+            <div class="tag">Suomi / Englanti / Ruotsi</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="koulutus">
+        <h2>Koulutus</h2>
+        <div class="grid">
+          <article class="item">
+            <strong>Jyväskylän yliopisto – Taloustiede (KTM, kesken)</strong>
+            <div class="muted">2024– • Pääaine taloustiede, sivuaine IT</div>
+            <p>Kurssit: Ohjelmointi 2, Tikape (SQL), makrovakaus, talousmallit.</p>
+          </article>
+          <article class="item">
+            <strong>Jyväskylän yliopisto – Taloustiede (KTM, alempi, valmis)</strong>
+            <div class="muted">2021–2024</div>
+            <p>Kandidaatintutkielma: Asuntomarkkinat & väestörakenne (esimerkki).</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="linkit">
+        <h2>Linkit</h2>
+        <p class="muted">Päivitä URL-osoitteet alla.</p>
+        <div class="grid">
+          <a class="item" href="mailto:etunimi.sukunimi@email.com">Sähköposti</a>
+          <a class="item" href="tel:+358401234567">Puhelin</a>
+          <a class="item" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="item" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="item" href="#">Lataa PDF-CV</a>
+        </div>
+      </section>
+
+      <section id="video">
+        <h2>Videot</h2>
+        <p class="muted">Voit upottaa YouTube-/Vimeo-linkin tai käyttää paikallista MP4-tiedostoa.</p>
+        <div class="grid">
+          <!-- YouTube/Vimeo upotus esimerkki -->
+          <div class="item">
+            <div class="video-wrap">
+              <iframe id="yt-iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video-CV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <small class="muted">Vaihda videon URL syöttökentästä tai suoraan iframe src -osoitteesta.</small>
+          </div>
+          <!-- Paikallinen video (MP4) esimerkki -->
+          <div class="item">
+            <div class="video-wrap">
+              <video id="local-video" controls poster="" src="">
+                Selaimesi ei tue videoelementtiä.
+              </video>
+            </div>
+            <div class="row" style="margin-top:8px">
+              <label class="muted">Lisää .mp4-tiedosto: <input type="file" id="fileInput" accept="video/mp4" /></label>
+            </div>
+          </div>
+        </div>
+        <details style="margin-top:12px">
+          <summary>Upota video omasta linkistä</summary>
+          <div class="item" style="margin-top:10px">
+            <label class="muted" for="embedUrl">Liitä YouTube/Vimeo-linkki:</label>
+            <div class="row" style="margin-top:6px">
+              <input id="embedUrl" type="url" placeholder="https://www.youtube.com/watch?v=..." style="flex:1;padding:10px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--text)" />
+              <button class="btn" onclick="setEmbed()">Upota</button>
+            </div>
+            <small class="muted">Vinkki: myös lyhyet youtu.be-linkit toimivat.</small>
+          </div>
+        </details>
+      </section>
+
+      <section id="yhteys">
+        <h2>Yhteystiedot</h2>
+        <p>Jyväskylä, Suomi · <a href="mailto:etunimi.sukunimi@email.com">etunimi.sukunimi@email.com</a></p>
+        <form class="grid" onsubmit="openMail(event)">
+          <input required name="name" placeholder="Nimesi" style="padding:12px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--text)" />
+          <input required type="email" name="email" placeholder="Sähköpostisi" style="padding:12px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--text)" />
+          <textarea required name="message" placeholder="Viestisi" rows="5" style="padding:12px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--text)"></textarea>
+          <button class="btn" type="submit">Lähetä</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Juho Hakala · Rakennettu yhdellä HTML-tiedostolla. 
+    </footer>
+  </div>
+
+  <script>
+    // Dynaaminen vuosi
+    document.getElementById('year').textContent = new Date().getFullYear()
+
+    // Avaa mailto luonnos lomakkeesta
+    function openMail(e){
+      e.preventDefault();
+      const d = new FormData(e.target)
+      const subject = encodeURIComponent('Yhteydenotto CV-sivulta – ' + d.get('name'))
+      const body = encodeURIComponent('Nimi: ' + d.get('name') + '\nEmail: ' + d.get('email') + '\n\n' + d.get('message'))
+      window.location.href = `mailto:etunimi.sukunimi@email.com?subject=${subject}&body=${body}`
+    }
+
+    // Paikallinen MP4-lataus
+    const input = document.getElementById('fileInput')
+    input.addEventListener('change', (ev)=>{
+      const file = ev.target.files?.[0]
+      if(!file) return
+      const url = URL.createObjectURL(file)
+      const v = document.getElementById('local-video')
+      v.src = url
+      v.play().catch(()=>{})
+    })
+
+    // YT/Vimeo linkin muunnos iframeksi
+    function toEmbed(url){
+      try{
+        const u = new URL(url)
+        // YouTube täysi linkki
+        if(u.hostname.includes('youtube.com')){
+          const id = u.searchParams.get('v')
+          if(id) return `https://www.youtube.com/embed/${id}`
+          // /shorts/ tai /live/
+          const parts = u.pathname.split('/').filter(Boolean)
+          if(parts[0]==='shorts' && parts[1]) return `https://www.youtube.com/embed/${parts[1]}`
+        }
+        // youtu.be lyhyt
+        if(u.hostname==='youtu.be'){
+          const id = u.pathname.slice(1)
+          if(id) return `https://www.youtube.com/embed/${id}`
+        }
+        // Vimeo
+        if(u.hostname.includes('vimeo.com')){
+          const id = u.pathname.split('/').filter(Boolean).pop()
+          if(id) return `https://player.vimeo.com/video/${id}`
+        }
+      }catch(e){/* ignore */}
+      return url // fallback: käytä sellaisenaan
+    }
+    function setEmbed(){
+      const src = document.getElementById('embedUrl').value.trim()
+      if(!src) return
+      const iframe = document.getElementById('yt-iframe')
+      iframe.src = toEmbed(src)
+    }
+  </script>
+</body>
+</html>
