@@ -119,13 +119,30 @@
       </section>
 
       <section id="excel">
-        <div class="row">
-          <h2>Laina laskuri</h2>
-          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRrW5I93HAHPX7hRAGapIf7qxwY_3MPkT3my8sAmHtBXAondnyMjgoyRdOGjnodRQ/pubhtml?gid=32027559&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        <h2>Talouden seurantalaskuri</h2>
+        <div class="excel-wrap">
+            <iframe 
+              src="<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRrW5I93HAHPX7hRAGapIf7qxwY_3MPkT3my8sAmHtBXAondnyMjgoyRdOGjnodRQ/pubhtml?gid=32027559&amp;single=true&amp;widget=true&amp;headers=false"></iframe>"
+              class="excel-embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
         </div>
-        <ul class="list">
-        </ul>
       </section>
+
+<style>
+  .excel-wrap { max-width: 1200px; margin: 0 auto; }
+  .excel-embed {
+    width: 100%;
+    height: 80vh;   /* Näkyy isoina ilman leikkautumista */
+    min-height: 600px;
+    border: 0;
+  }
+  @media (max-width: 768px) {
+    .excel-embed { height: 65vh; min-height: 480px; }
+  }
+</style>
 
       <!-- Oikea palsta -->
       <section id="taidot">
@@ -247,6 +264,7 @@
   </script>
 </body>
 </html>
+
 
 
 
